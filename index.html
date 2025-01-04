@@ -13,14 +13,13 @@
     </header>
     <nav>
         <ul>
-          
             <li><a href="#cars">Available Cars</a></li>
             <li><a href="#booking">Book a Car</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About Us</a></li>
         </ul>
     </nav>
-   
+
     <section id="cars">
         <h2>Available Cars</h2>
         <ul>
@@ -29,9 +28,10 @@
             <li><strong>Luxury:</strong> Premium cars for those who prefer traveling in style.</li>
         </ul>
     </section>
+
     <section id="booking">
         <h2>Book a Car</h2>
-        <form action="#" method="POST">
+        <form id="booking-form">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
 
@@ -53,22 +53,48 @@
             to
             <input type="date" id="end-date" name="end-date" required><br><br>
 
-            <button type="submit">Book Now</button>
+            <button type="button" onclick="sendBookingDetails()">Book Now</button>
         </form>
     </section>
+
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: support@goarentcars.com</p>
         <p>Phone: +91 9876543210</p>
         <p>Address: Calangute, Goa, India</p>
     </section>
-  
+
     <section id="about">
         <h2>About Us</h2>
         <p>At Goa Rent Cars, we offer a wide range of vehicles to make your trip to Goa comfortable and convenient. Whether you're here for business or leisure, we have the perfect car for you!</p>
     </section>
+
     <footer>
         <p>&copy; 2025 Goa Rent Cars. All rights reserved.</p>
     </footer>
+
+    <script>
+        function sendBookingDetails() {
+            // Get the values from the form
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const car = document.getElementById("car").value;
+            const startDate = document.getElementById("start-date").value;
+            const endDate = document.getElementById("end-date").value;
+
+            // Construct the WhatsApp message
+            const message = `*New Booking Details:*\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nCar: ${car}\nRental Dates: ${startDate} to ${endDate}`;
+
+            // URL encode the message
+            const encodedMessage = encodeURIComponent(message);
+
+            // WhatsApp Click-to-Chat URL (replace the number with the owner's WhatsApp number)
+            const whatsappUrl = `https://wa.me/7709125030?text=${encodedMessage}`;
+
+            // Redirect the user to WhatsApp with the pre-filled message
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
 </body>
 </html>
