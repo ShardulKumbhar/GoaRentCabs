@@ -3,98 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goa Rent Cars</title>
+    <meta name="description" content="Goa RentCabs offers a wide range of self-drive cars for rent in Goa. Explore beaches and tourist spots with ease and convenience.">
+    <title>Goa RentCabs - Self Drive Car Rentals in Goa</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero .btn {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .car-list {
+            display: flex;
+            gap: 20px;
+        }
+
+        .car {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            flex: 1;
+            text-align: center;
+        }
+
+        .car img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact-options {
+            margin-top: 20px;
+        }
+
+        .contact-options a {
+            display: inline-block;
+            margin: 5px;
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .contact-form, .booking-form {
+            margin-top: 20px;
+        }
+
+        .contact-form input, .contact-form textarea, .contact-form button,
+        .booking-form input, .booking-form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact-form button, .booking-form button {
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .car .book-now-btn {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Goa Rent Cars</h1>
-        <p>Your Trusted Partner for Car Rentals in Goa</p>
+        <div class="container">
+            <h1>Goa RentCabs</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cars">Cars</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#cars">Available Cars</a></li>
-            <li><a href="#booking">Book a Car</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About Us</a></li>
-        </ul>
-    </nav>
+
+    <section id="home">
+        <div class="hero" style="background-image: url('https://assets.serenity.co.uk/38000-38999/38650/720x480.jpg'); background-size: cover; background-position: center;">
+            <h2>Your Gateway to Exploring Goa</h2>
+            <p>Rent a car and explore Goa at your own pace. Choose from budget to luxury vehicles.</p>
+            <a href="#cars" class="btn">View Cars</a>
+        </div>
+    </section>
+    
 
     <section id="cars">
-        <h2>Available Cars</h2>
-        <ul>
-            <li><strong>Economy:</strong> Compact and fuel-efficient cars, ideal for solo travelers or couples.</li>
-            <li><strong>SUVs:</strong> Spacious vehicles for family trips and group adventures.</li>
-            <li><strong>Luxury:</strong> Premium cars for those who prefer traveling in style.</li>
-        </ul>
+        <div class="container">
+            <h2>Our Fleet</h2>
+            <div class="car-list">
+                <div class="car">
+                    <img src="https://www.autovista.in/assets/product_images/Invicto_model.jpeg" alt="Maruti Suzuki Swift">
+                    <h3>Maruti Suzuki Swift</h3>
+                    <p>Compact and budget-friendly</p>
+                    <p>Price: &#8377;1600/day</p>
+                    <a href="https://wa.me/7709125030?text=Hello,%20I%20want%20to%20book%20the%20Maruti%20Suzuki%20Swift.%20Please%20provide%20more%20details." class="book-now-btn" target="_blank">BOOK NOW</a>
+                </div>
+                <div class="car">
+                    <img src="https://imgd.aeplcdn.com/600x337/n/cw/ec/139651/curvv-exterior-right-front-three-quarter.jpeg?isig=0&q=80" alt="Hyundai Creta">
+                    <h3>Hyundai Creta</h3>
+                    <p>Comfortable and spacious</p>
+                    <p>Price: &#8377;3500/day</p>
+                    <a href="https://wa.me/7709125030?text=Hello,%20I%20want%20to%20book%20the%20Hyundai%20Creta.%20Please%20provide%20more%20details." class="book-now-btn" target="_blank">BOOK NOW</a>
+                </div>
+                <div class="car">
+                    <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Dzire/11387/1731318279714/front-left-side-47.jpg?impolicy=resize&imwidth=360" alt="Audi Convertible">
+                    <h3>Audi Convertible</h3>
+                    <p>Luxury redefined</p>
+                    <p>Price: &#8377;25,000/day</p>
+                    <a href="https://wa.me/7709125030?text=Hello,%20I%20want%20to%20book%20the%20Audi%20Convertible.%20Please%20provide%20more%20details." class="book-now-btn" target="_blank">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="booking">
-        <h2>Book a Car</h2>
-        <form id="booking-form">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="phone">Phone:</label><br>
-            <input type="tel" id="phone" name="phone" required><br><br>
-
-            <label for="car">Select Car:</label><br>
-            <select id="car" name="car">
-                <option value="economy">Economy</option>
-                <option value="suv">SUV</option>
-                <option value="luxury">Luxury</option>
-            </select><br><br>
-
-            <label for="dates">Rental Dates:</label><br>
-            <input type="date" id="start-date" name="start-date" required>
-            to
-            <input type="date" id="end-date" name="end-date" required><br><br>
-
-            <button type="button" onclick="sendBookingDetails()">Book Now</button>
-        </form>
+    <section id="pricing">
+        <div class="container">
+            <h2>Pricing Details</h2>
+            <p>Minimum rental duration: 2 days</p>
+            <ul>
+                <li>Compact Cars: Starting at &#8377;1600/day</li>
+                <li>SUVs: Starting at &#8377;3500/day</li>
+                <li>Luxury Cars: Starting at &#8377;25,000/day</li>
+            </ul>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: support@goarentcars.com</p>
-        <p>Phone: +91 9876543210</p>
-        <p>Address: Calangute, Goa, India</p>
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to book a car? Reach out to us!</p>
+            <form class="contact-form" onsubmit="sendContactWhatsAppMessage(event)">
+                <label for="contact-name">Name:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+
+                <label for="contact-phone">Phone Number:</label>
+                <input type="tel" id="contact-phone" name="contact-phone" required>
+
+                <label for="contact-message">Message:</label>
+                <textarea id="contact-message" name="contact-message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="contact-options">
+                <a href="tel:+917709125030">Call to Book</a>
+                <a href="https://wa.me/7709125030" target="_blank">WhatsApp Us</a>
+            </div>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At Goa Rent Cars, we offer a wide range of vehicles to make your trip to Goa comfortable and convenient. Whether you're here for business or leisure, we have the perfect car for you!</p>
+    <section id="book">
+        <div class="container">
+            <h2>Book a Car</h2>
+            <form class="booking-form" onsubmit="sendBookingWhatsAppMessage(event)">
+                <label for="book-name">Name:</label>
+                <input type="text" id="book-name" name="book-name" required>
+
+                <label for="book-phone">Phone Number:</label>
+                <input type="tel" id="book-phone" name="book-phone" required>
+
+                <label for="book-from">Date From:</label>
+                <input type="date" id="book-from" name="book-from" required>
+
+                <label for="book-to">Date To:</label>
+                <input type="date" id="book-to" name="book-to" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Goa Rent Cars. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Goa RentCabs. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- <script>
-        function sendBookingDetails() {
-            // Get the values from the form
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const phone = document.getElementById("phone").value;
-            const car = document.getElementById("car").value;
-            const startDate = document.getElementById("start-date").value;
-            const endDate = document.getElementById("end-date").value;
-
-            // Construct the WhatsApp message
-            const message = `*New Booking Details:*\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nCar: ${car}\nRental Dates: ${startDate} to ${endDate}`;
-
-            // URL encode the message
-            const encodedMessage = encodeURIComponent(message);
-
-            // WhatsApp Click-to-Chat URL (replace the number with the owner's WhatsApp number)
-            const whatsappUrl = `https://wa.me/7709125030?text=${encodedMessage}`;
-
-            // Redirect the user to WhatsApp with the pre-filled message
+    <script>
+        function sendContactWhatsAppMessage(event) {
+            event.preventDefault();
+            const name = document.getElementById('contact-name').value;
+            const phone = document.getElementById('contact-phone').value;
+            const message = document.getElementById('contact-message').value;
+            const whatsappUrl = `https://wa.me/7709125030?text=Hello,%20my%20name%20is%20${encodeURIComponent(name)}.%20${encodeURIComponent(message)}.%20You%20can%20reach%20me%20at%20${encodeURIComponent(phone)}.`;
             window.open(whatsappUrl, '_blank');
         }
-    </script> -->
+
+        function sendBookingWhatsAppMessage(event) {
+            event.preventDefault();
+            const name = document.getElementById('book-name').value;
+            const phone = document.getElementById('book-phone').value;
+            const dateFrom = document.getElementById('book-from').value;
+            const dateTo = document.getElementById('book-to').value;
+
+            const whatsappUrl = `https://wa.me/7709125030?text=Hello,%20I%20want%20to%20book%20a%20car.%20My%20name%20is%20${encodeURIComponent(name)}.%20Phone:%20${encodeURIComponent(phone)}.%20From:%20${encodeURIComponent(dateFrom)}.%20To:%20${encodeURIComponent(dateTo)}.`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
 </body>
 </html>
+
